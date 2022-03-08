@@ -38,7 +38,7 @@ class instaltionController extends Controller
 		else
 		{	
 		//dd(in_array($_SERVER['REMOTE_ADDR'], $whitelist), "outside whitelist");
-			$file = '.env';
+			$file = '/.env';
 			$content = file_get_contents($file);
 			$host = $request->db_host;
 			$d_user_name = $request->db_username;
